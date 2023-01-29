@@ -14,5 +14,12 @@
     "inquirer": "^9.1.4",
     "nanospinner": "^1.1.0"
   },
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "jest": "^29.4.1"
+  },
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "start": "node ."
+  }
 }

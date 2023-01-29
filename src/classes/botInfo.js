@@ -5,6 +5,7 @@ import packageJSON from "../../package.json" assert { type: "json" };
 import chalkAnimation from "chalk-animation";
 import inquirer from "inquirer";
 import cp from "child_process";
+import files from "../files";
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 export class bot {
@@ -104,7 +105,46 @@ export class bot {
       JSON.stringify(this, null, 4)
     );
     //! SRC FILES
-    fs.writeFileSync();
+    /**
+     * @param {files} files
+     */
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/src/index.js`,
+      files["index.js"]
+    );
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/src/commands/ping.js`,
+      files.commands["ping.js"]
+    );
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/src/events/client/ready.js`,
+      files.events.client["ready.js"]
+    );
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/events/interaction/SlashCommands.js`,
+      files.events.interaction["SlashCommands.js"]
+    );
+    //! UTIL
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/src/util/index.js`,
+      files.util["index.js"]
+    );
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/src/util/functions/database.js`,
+      files.util.functions["database.js"]
+    );
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/src/util/function/fileLoader.js`,
+      files.util.functions["fileLoader.js"]
+    );
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/src/util/handlers/commandHandler.js`,
+      files.util.handlers["commandHandler.js"]
+    );
+    fs.writeFileSync(
+      `${process.cwd}/${this.projectName}/src/util/handlers/eventHandler.js`,
+      files.util.handlers["eventHandler.js"]
+    );
   }
   async setup() {
     const prompt = await this.prompt();
