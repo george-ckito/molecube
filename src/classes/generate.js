@@ -4,8 +4,7 @@ import inquirer from "inquirer";
 import { createSpinner } from "nanospinner";
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 export class generate {
-  constructor(botInfo) {
-    this.botInfo = botInfo;
+  constructor() {
     this.events = [
       "applicationCommandPermissionsUpdate",
       "cacheSweep",
