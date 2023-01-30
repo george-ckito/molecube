@@ -1,5 +1,4 @@
-module.exports =
-  'const {Collection} = require("discord.js");\n' +
+export default 'const {Collection} = require("discord.js");\n' +
   'const database = require("./functions/database");\n' +
   'const loadEvents = require("./handlers/eventHandler");\n' +
   "\n" +

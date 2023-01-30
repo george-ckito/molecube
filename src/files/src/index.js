@@ -1,5 +1,4 @@
-module.exports =
-  "const {\n" +
+export default "const {\n" +
   "  Client,\n" +
   "  GatewayIntentBits,\n" +
   "  Partials,\n" +

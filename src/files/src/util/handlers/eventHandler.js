@@ -1,5 +1,4 @@
-module.exports =
-  'const { Collection } = require("discord.js"); \n' +
+export default 'const { Collection } = require("discord.js"); \n' +
   'const {loadFiles} = require("../functions/fileLoader"); \n' +
   " \n" +
   "async function loadEvents(client) { \n" +

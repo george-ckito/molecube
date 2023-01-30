@@ -1,5 +1,4 @@
-module.exports =
-  "const {\n" +
+export default "const {\n" +
   "  ChatInputCommandInteraction,\n" +
   "  SlashCommandBuilder,\n" +
   '} = require("discord.js");\n' +
@@ -11,8 +10,8 @@ module.exports =
   "  /**\n" +
   "   * @param {ChatInputCommandInteraction} interaction\n" +
   "   */\n" +
-  "  async execute(interaction, client) {\n" +
-  "    interaction.reply({\n" +
+  "  async execute(interaction, client, message, arguments) {\n" +
+  '    message ? message.reply({ content: "Pong!" }) :interaction.reply({\n' +
   '      content: "Pong!",\n' +
   "    });\n" +
   "  },\n" +

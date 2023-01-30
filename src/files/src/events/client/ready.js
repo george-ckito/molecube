@@ -1,5 +1,4 @@
-module.exports =
-  'const {loadCommands} = require("../../util/handlers/commandHandler");\n' +
+export default 'const {loadCommands} = require("../../util/handlers/commandHandler");\n' +
   "\n" +
   "module.exports = {\n" +
   '  name: "ready",\n' +

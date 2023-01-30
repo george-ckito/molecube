@@ -1,5 +1,4 @@
-module.exports =
-  'const mongoose = require("mongoose");\n' +
+export default 'const mongoose = require("mongoose");\n' +
   'const config = require("../../../molecule.json");\n' +
   "\n" +
   "module.exports = () => {\n" +

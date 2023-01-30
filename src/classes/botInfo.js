@@ -5,14 +5,14 @@ import packageJSON from "../../package.json" assert { type: "json" };
 import chalkAnimation from "chalk-animation";
 import inquirer from "inquirer";
 import cp from "child_process";
-import files from "../files";
+import files from "../files/index.js";
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 export class bot {
   constructor() {
     // console.log({
     //   projectName: this.projectName,
-    //   language: this.language,
+    //   language: this.lanbroguage,
     //   packageManager: this.packageManager,
     //   token: this.token,
     //   mongodb: this.mongodb,
@@ -80,75 +80,5 @@ export class bot {
     };
 
     console.log(this);
-  }
-
-  async createDirectories() {
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}`);
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}/src`);
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}/src/commands`);
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}/src/events`);
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}/src/events/interaction`);
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}/src/events/client`);
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}/src/util`);
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}/src/util/events`);
-    fs.mkdirSync(`${process.cwd()}/${this.projectName}/src/util/handlers`);
-    return `${process.cwd()}/${this.projectName}`;
-  }
-  async createFiles(packageJSON) {
-    //! INIT
-    fs.writeFileSync(
-      `${process.cwd()}/${this.projectName}/package.json`,
-      JSON.stringify(packageJSON, null, 4)
-    );
-    fs.writeFileSync(
-      `${process.cwd()}/${this.projectName}/molecule.json`,
-      JSON.stringify(this, null, 4)
-    );
-    //! SRC FILES
-    /**
-     * @param {files} files
-     */
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/src/index.js`,
-      files["index.js"]
-    );
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/src/commands/ping.js`,
-      files.commands["ping.js"]
-    );
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/src/events/client/ready.js`,
-      files.events.client["ready.js"]
-    );
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/events/interaction/SlashCommands.js`,
-      files.events.interaction["SlashCommands.js"]
-    );
-    //! UTIL
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/src/util/index.js`,
-      files.util["index.js"]
-    );
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/src/util/functions/database.js`,
-      files.util.functions["database.js"]
-    );
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/src/util/function/fileLoader.js`,
-      files.util.functions["fileLoader.js"]
-    );
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/src/util/handlers/commandHandler.js`,
-      files.util.handlers["commandHandler.js"]
-    );
-    fs.writeFileSync(
-      `${process.cwd}/${this.projectName}/src/util/handlers/eventHandler.js`,
-      files.util.handlers["eventHandler.js"]
-    );
-  }
-  async setup() {
-    const prompt = await this.prompt();
-    await this.createDirectories();
-    await this.createFiles(prompt);
   }
 }

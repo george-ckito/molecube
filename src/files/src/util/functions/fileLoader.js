@@ -1,5 +1,4 @@
-module.exports =
-  'const glob = require("glob");\n' +
+export default 'const glob = require("glob");\n' +
   'const {promisify} = require("util");\n' +
   "const proGlob = promisify(glob);\n" +
   "\n" +

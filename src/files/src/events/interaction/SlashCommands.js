@@ -1,5 +1,4 @@
-module.exports =
-  'const { ChatInputCommandInteraction } = require("discord.js");\n' +
+export default 'const { ChatInputCommandInteraction } = require("discord.js");\n' +
   "\n" +
   "module.exports = {\n" +
   '  name: "interactionCreate",\n' +

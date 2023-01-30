@@ -1,14 +1,14 @@
-import PINGCMD from "./src/commands/ping";
-import ready from "./src/events/client/ready";
-import SlashCommands from "./src/events/interaction/SlashCommands";
-import database from "./src/util/functions/database";
-import fileLoader from "./src/util/functions/fileLoader";
-import commandHandler from "./src/util/handlers/commandHandler";
-import eventHandler from "./src/util/handlers/eventHandler";
-import indexutil from "./src/util/index";
-import index from "./src/index";
+import PINGCMD from "./src/commands/ping.js";
+import ready from "./src/events/client/ready.js";
+import SlashCommands from "./src/events/interaction/SlashCommands.js";
+import database from "./src/util/functions/database.js";
+import fileLoader from "./src/util/functions/fileLoader.js";
+import commandHandler from "./src/util/handlers/commandHandler.js";
+import eventHandler from "./src/util/handlers/eventHandler.js";
+import indexutil from "./src/util/index.js";
+import index from "./src/index.js";
 
-module.exports = {
+export default {
   commands: {
     "ping.js": PINGCMD,
   },
