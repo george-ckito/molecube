@@ -109,12 +109,19 @@ export class generate {
       case "Event": {
         const events = await inquirer.prompt({
           type: "checkbox",
-          name: "event",
+          name: "events",
           message: "Choose your events",
           choices: this.events,
         });
+        if (!fs.existsSync(`${process.cwd()}/molecule.json`)) {
+          return console.log(
+            chalk.red(
+              "There's no molecule project initialized in this directory"
+            )
+          );
+        }
         let spinner = createSpinner("Creating (the) event(s)...").start();
-        events.forEach((event) => {
+        events.events.forEach((event) => {
           this.generateEvent(event);
         });
         sleep(3000);
@@ -123,11 +130,6 @@ export class generate {
     }
   }
   async generateCommand(name, description, category) {
-    if (!fs.existsSync(`${process.cwd()}/molecule.json`)) {
-      return console.log(
-        chalk.red("There's no molecule project initialized in this directory")
-      );
-    }
     const command =
       "const {\n" +
       "  ChatInputCommandInteraction,\n" +
@@ -160,7 +162,7 @@ export class generate {
         chalk.red("There's no molecule project initialized in this directory")
       );
     }
-    const event =
+    const eventFile =
       `// https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-${event}\n` +
       "module.exports = {\n" +
       " name: '{name}',\n" +
@@ -171,6 +173,6 @@ export class generate {
       " }\n" +
       "}";
 
-    fs.writeFileSync(`${process.cwd()}/src/events/${event}.js`, event);
+    fs.writeFileSync(`${process.cwd()}/src/events/${event}.js`, eventFile);
   }
 }
