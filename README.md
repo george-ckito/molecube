@@ -55,7 +55,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Molecule is a simple Command Line Application written in C#. It helps you generate discord.js bots. Again, this is a discord bot **generator**, not a bot itself. Its configuration is saved in molecule.json. Its currently only available on Windows.
+Molecule is a simple Command Line Application written in NodeJS. It helps you generate discord.js bots. Again, this is a discord bot **generator**, not a bot itself. Its configuration is saved in molecule.json.
 
 Molecule offers you:
 
@@ -79,14 +79,10 @@ Molecule offers you:
 Installing molecule is pretty easy and straightforward.
 
 ### Installation
-
-1. Download latest setup file from [https://github.com/raining-codes/molecule/releases/](Releases)
-2. Run the installation file and **don't** change the default path.
-3. After the installation is complete, search for environment variables and click on the first result.
-4. Click environment variables.
-5. Select Path and click edit
-6. Now click new and type molecules installation location.
-7. Click apply and ok.
+##### To use with yarn do:
+yarn global add molecule
+##### To use with npm do:
+npm install -g molecule
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,7 +97,6 @@ To make a new discord bot using molecule, open terminal in your preffered locati
 3. Your package manager
 4. Your bots token
 5. Your MongoDB Database URI (If you don't have a database just skip this)
-6. Rather or not to use slash commands
 
 After you've answered these questions, Molecule will create a new folder and create a simple ping slash command.
 
