@@ -18,7 +18,7 @@ switch (args[0]) {
   }
   default: {
     console.log(
-      "No arguments were provided, please read the docs: https://github.com/raining-codes/molecule"
+      "No arguments were provided, please read the docs: https://github.com/raining-codes/molecube"
     );
   }
 }

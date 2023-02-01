@@ -1,5 +1,5 @@
 {
-  "name": "molecule",
+  "name": "molecube",
   "version": "1.0.0",
   "description": "A command line application to help with generating discord.js bots.",
   "main": "src/index.js",

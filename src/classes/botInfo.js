@@ -22,7 +22,7 @@ export class bot {
     // this.createFiles();
   }
   async prompt() {
-    const title = chalk.blueBright(`Molecule v${packageJSON.version}`);
+    const title = chalk.blueBright(`Molecube v${packageJSON.version}`);
     console.log(title);
     const projectName = await inquirer.prompt({
       name: "projectName",

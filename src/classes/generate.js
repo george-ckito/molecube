@@ -113,10 +113,10 @@ export class generate {
           message: "Choose your events",
           choices: this.events,
         });
-        if (!fs.existsSync(`${process.cwd()}/molecule.json`)) {
+        if (!fs.existsSync(`${process.cwd()}/molecube.json`)) {
           return console.log(
             chalk.red(
-              "There's no molecule project initialized in this directory"
+              "There's no molecube project initialized in this directory"
             )
           );
         }
@@ -157,9 +157,9 @@ export class generate {
     spinner.success("Created the command!");
   }
   async generateEvent(event) {
-    if (!fs.existsSync(`${process.cwd()}/molecule.json`)) {
+    if (!fs.existsSync(`${process.cwd()}/molecube.json`)) {
       return console.log(
-        chalk.red("There's no molecule project initialized in this directory")
+        chalk.red("There's no molecube project initialized in this directory")
       );
     }
     const eventFile =

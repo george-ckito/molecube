@@ -1,5 +1,5 @@
 export default 'const mongoose = require("mongoose");\n' +
-  'const config = require("../../../molecule.json");\n' +
+  'const config = require("../../../molecube.json");\n' +
   "\n" +
   "module.exports = () => {\n" +
   "if (!config.database) return;\n" +

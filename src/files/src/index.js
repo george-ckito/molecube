@@ -11,7 +11,7 @@ export default "const {\n" +
   "  partials: [User, Message, GuildMember, ThreadMember]," +
   "});\n" +
   'const init = require("./util/index");\n' +
-  'const config = require("../molecule.json");\n' +
+  'const config = require("../molecube.json");\n' +
   "\n" +
   "\n" +
   "(() => {" +

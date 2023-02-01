@@ -44,7 +44,7 @@ export class setup {
       JSON.stringify(packageJSON, null, 4)
     );
     fs.writeFileSync(
-      `${process.cwd()}/${this.botInfo.projectName}/molecule.json`,
+      `${process.cwd()}/${this.botInfo.projectName}/molecube.json`,
       JSON.stringify(this, null, 4)
     );
     //! SRC FILES
