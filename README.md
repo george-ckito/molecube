@@ -28,23 +28,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/raining-codes/molecule">
+  <a href="https://github.com/raining-codes/molecube">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Molecule</h3>
+<h3 align="center">molecube</h3>
 
   <p align="center">
     A command line application to make discord.js easier!
     <br />
-    <a href="https://github.com/raining-codes/molecule"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/raining-codes/molecube"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/raining-codes/molecule">View Demo</a>
+    <a href="https://github.com/raining-codes/molecube">View Demo</a>
     ·
-    <a href="https://github.com/raining-codes/molecule/issues">Report Bug</a>
+    <a href="https://github.com/raining-codes/molecube/issues">Report Bug</a>
     ·
-    <a href="https://github.com/raining-codes/molecule/issues">Request Feature</a>
+    <a href="https://github.com/raining-codes/molecube/issues">Request Feature</a>
   </p>
 </div>
 
@@ -55,9 +55,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Molecule is a simple Command Line Application written in NodeJS. It helps you generate discord.js bots. Again, this is a discord bot **generator**, not a bot itself. Its configuration is saved in molecule.json.
+molecube is a simple Command Line Application written in NodeJS. It helps you generate discord.js bots. Again, this is a discord bot **generator**, not a bot itself. Its configuration is saved in molecube.json.
 
-Molecule offers you:
+molecube offers you:
 
 * Creating a project in discord.js
 * A command handler
@@ -67,7 +67,7 @@ Molecule offers you:
 * Conection to a database
 * Simplicity
 
-**Full Changelog**: https://github.com/raining-codes/molecule/commits/Release
+**Full Changelog**: https://github.com/raining-codes/molecube/commits/Release
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,13 +76,13 @@ Molecule offers you:
 
 ## Getting Started
 
-Installing molecule is pretty easy and straightforward.
+Installing molecube is pretty easy and straightforward.
 
 ### Installation
 ##### To use with yarn do:
-yarn global add molecule
+yarn global add molecube
 ##### To use with npm do:
-npm install -g molecule
+npm install -g molecube
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,19 +91,19 @@ npm install -g molecule
 ## Usage
 
 ### Making a new bot
-To make a new discord bot using molecule, open terminal in your preffered location and type `molecule new`. This will ask you a couple of questions, These questions are:
+To make a new discord bot using molecube, open terminal in your preffered location and type `molecube new`. This will ask you a couple of questions, These questions are:
 1. Bot name
 2. Your preffered language
 3. Your package manager
 4. Your bots token
 5. Your MongoDB Database URI (If you don't have a database just skip this)
 
-After you've answered these questions, Molecule will create a new folder and create a simple ping slash command.
+After you've answered these questions, molecube will create a new folder and create a simple ping slash command.
 
 ### Generating events or commands
 To add your own custom commands and events, you need to follow these instructions.
-1. Open terminal in a molecule project directory.
-2. Run `molecule gen`, this will ask you to generate a event or command.
+1. Open terminal in a molecube project directory.
+2. Run `molecube gen`, this will ask you to generate a event or command.
 3. Select your option and press enter.
 
 If you selected event, theres gonna be list of all events and you can create multiple events at once. Your generated event files are gonna be located in src/events.
@@ -129,7 +129,7 @@ Distributed under the MIT License.
 
 Your Name - **George Tskitishvili**
 
-Project Link: [https://github.com/raining-codes/molecule](https://github.com/raining-codes/molecule)
+Project Link: [https://github.com/raining-codes/molecube](https://github.com/raining-codes/molecube)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,16 +138,16 @@ Project Link: [https://github.com/raining-codes/molecule](https://github.com/rai
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/raining-codes/molecule.svg?style=for-the-badge
-[contributors-url]: https://github.com/raining-codes/molecule/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/raining-codes/molecule.svg?style=for-the-badge
-[forks-url]: https://github.com/raining-codes/molecule/network/members
-[stars-shield]: https://img.shields.io/github/stars/raining-codes/molecule.svg?style=for-the-badge
-[stars-url]: https://github.com/raining-codes/molecule/stargazers
-[issues-shield]: https://img.shields.io/github/issues/raining-codes/molecule.svg?style=for-the-badge
-[issues-url]: https://github.com/raining-codes/molecule/issues
-[license-shield]: https://img.shields.io/github/license/raining-codes/molecule.svg?style=for-the-badge
-[license-url]: https://github.com/raining-codes/molecule/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/raining-codes/molecube.svg?style=for-the-badge
+[contributors-url]: https://github.com/raining-codes/molecube/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/raining-codes/molecube.svg?style=for-the-badge
+[forks-url]: https://github.com/raining-codes/molecube/network/members
+[stars-shield]: https://img.shields.io/github/stars/raining-codes/molecube.svg?style=for-the-badge
+[stars-url]: https://github.com/raining-codes/molecube/stargazers
+[issues-shield]: https://img.shields.io/github/issues/raining-codes/molecube.svg?style=for-the-badge
+[issues-url]: https://github.com/raining-codes/molecube/issues
+[license-shield]: https://img.shields.io/github/license/raining-codes/molecube.svg?style=for-the-badge
+[license-url]: https://github.com/raining-codes/molecube/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
