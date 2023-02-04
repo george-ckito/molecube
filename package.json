@@ -19,6 +19,7 @@
   "devDependencies": {
     "jest": "^29.4.1"
   },
+  "bin": {"cli":"./src/index.js"},
   "scripts": {
     "test": "jest --detectOpenHandles",
     "start": "node ."
